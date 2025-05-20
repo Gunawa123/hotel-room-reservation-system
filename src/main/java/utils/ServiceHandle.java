@@ -19,7 +19,7 @@ public class ServiceHandle {
 
     private static String generateUserId() {
         lastServiceId++;
-        return String.format("SRV0%4d", lastServiceId);
+        return String.format("SRV%04d", lastServiceId);
     }
 
     public static LinkedList<Service> getServices() {
